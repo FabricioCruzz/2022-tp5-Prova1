@@ -28,7 +28,6 @@ export class AppComponent {
       for(let i = 0; i < this.listaDeTimes.length - 1; i++){
         
         if(this.listaDeTimes[i + 1] == null){
-          console.log("Passei pelo if do ordenaArray")
           break;
         }
 
@@ -38,12 +37,6 @@ export class AppComponent {
           timeAux = this.listaDeTimes[i]
           this.listaDeTimes[i] = this.listaDeTimes[i + 1]
           this.listaDeTimes[i + 1] = timeAux
-          
-          if(this.listaDeTimes[i].pontuacao < this.listaDeTimes[i + 1].pontuacao){
-            console.log('Helloo')
-          }
-
-          console.log("Estou no else if do ordena Array")
           swap = true
 
         }

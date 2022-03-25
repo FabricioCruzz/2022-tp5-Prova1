@@ -22,7 +22,7 @@
   
   <table>
     <thead>
-      <tr>
+      <tr class="text-center">
         <td>Classificação</td>
         <td>Time</td>
         <td>Pontuação</td>
@@ -31,9 +31,9 @@
   
     <tbody>
       <tr *ngFor="let time of listaDeTimes; let i = index">
-        <td>{{ i + 1 }}</td>
-        <td>{{ time.nome }}</td>
-        <td>{{ time.pontuacao }}</td>
+        <td class="padding-left">{{ i + 1 }}</td>
+        <td class="padding-left">{{ time.nome }}</td>
+        <td class="padding-left">{{ time.pontuacao }}</td>
       </tr>
     </tbody>
   </table>
